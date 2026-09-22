@@ -1,21 +1,15 @@
 <script>
-    let count = 0;
+  import Navbar from "$lib/component/Navbar.svelte";
 
-    function increase() {
-        count++;
-    }
-
-    function decrease() {
-        count--;
-    }
+  let name = "Karishma";
 </script>
 
-<h1>{count}</h1>
+<Navbar />
 
-<button onclick={increase}>
-    Increase
-</button>
+<div>
+  <h1>Welcome, {name}!</h1>
 
-<button onclick={decrease}>
-    Decrease
-</button>
+  <p>Welcome to my SvelteKit Home Page</p>
+
+  <button>Get Started</button>
+</div>
