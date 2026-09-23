@@ -1,7 +1,12 @@
 <script>
   import Navbar from "$lib/component/Navbar.svelte";
+  import { goto } from "$app/navigation";
 
   let name = "Karishma";
+
+  function goToStudent() {
+    goto("/student");
+  }
 </script>
 
 <Navbar />
@@ -11,5 +16,5 @@
 
   <p>Welcome to my SvelteKit Home Page</p>
 
-  <button>Get Started</button>
+  <button onclick={goToStudent}>Get Started</button>
 </div>
